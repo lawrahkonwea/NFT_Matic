@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --bg-black: #04010c;
+  --txt-color: #f3ecfe;
+  --purple-btn-bg: #5e1ba5;
+  --yellow-btn-bg: #f9bd25;
+  --green-btn-bg: #066e43;
+  --red-btn-bg: #7b0421;
+  --icon-color: #924eda;
+  --green-txt: #00ff85ab;
+  --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e);
+  --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718);
+  --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e);
+  --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718);
+  --green2-gradient: linear-gradient(to bottom, #69890e, #030718);
+  --input-bg: #152754;
+}
+html,
+body {
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+  background: var(--bg-black);
+  color: var(--txt-color);
+  font-family: 'Clash Display', sans-serif;
+  margin-inline: auto;
+}
+main,
+footer {
+  width: 95%;
+  margin-inline: auto;
+}
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  cursor: pointer;
+}
+/* icon */
+.logo-img {
+  height: 30px;
+  cursor: pointer;
+}
+.fa-solid {
+  cursor: pointer;
+}
+.menu-bar {
+  font-size: 25px;
+}
+.close-bar {
+  color: black;
+  font-size: 30px;
+  display: grid;
+  place-content: center;
+  margin-top: 2rem;
+}
+
+/* Hafsah */
+.congrats {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 20px;
+}
+.matic {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+}
+.img-div{
+  width: 200px;
+  height: 240px;
+  margin: auto;
+  box-sizing: border-box;
+  border: 4px solid var(--input-bg);
+  background: #001038;
+  margin-top: 20px;
+}
+.matic-img{
+  background-color: rgb(60, 60, 119);
+  min-width: 80%;
+  width: 50%;
+  margin:50px auto;
+}
+
+/* Connect container styling */
+.connect-container{
+  background-color: #030718;
+  color: white;
+  display: block;
+  width: 170px;
+  /* height: 250px; */
+  /* margin: auto; */
+  float: right;
+  margin-bottom: 20px;
+  border-radius: 1px;
+  border: 1px solid rgb(8, 8, 98);
+  /* padding: px; */
+  margin-top:10px;
+}
+.connect-header {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.connect-tag {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  text-align: center;
+}
+.new-account {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #76e1b5;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.fa {
+  margin-top: 15px;
+}
+.gradient {
+  background-image: linear-gradient(
+    242.35deg,
+    rgba(94, 27, 165, 0.53) 32.81%,
+    rgba(21, 39, 84, 0.25) 39.79%,
+    rgba(249, 189, 37, 0.6) 46.53%,
+    rgba(6, 110, 67, 0.37) 54.77%
+  );
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  margin-top: 12px;
+}
+
+.middle-div {
+  box-sizing: border-box;
+  border: 1px solid rgba(23, 80, 225, 0.2);
+  border-style: dotted;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.matic-ptag {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  color: #76e1b5;
+  font-size: 8px;
+  margin-top: 15px;
+}
+.modal-footer {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 150%;
+  border-bottom:  1px solid rgba(23, 80, 225, 0.2);
+  width: 100% !important;
+  padding-bottom: 10px;
+
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cancel, .next {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  padding: 2px;
+}
+.cancel{
+  background-color: #030718;
+  color: white;
+
+
+}
+.next{
+  background-color: #5E1BA5;
+  color: white;
+}
+
+#wallet-name{
+  color: #76E1B5;                                                
+}
+
+.eth-reward{
+  font-weight: lighter;
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.7rem;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 1px solid transparent;
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+/* HAFSAH */

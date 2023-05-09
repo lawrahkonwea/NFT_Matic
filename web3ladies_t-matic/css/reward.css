@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --white: #ffffff;
+    --black: #000;
+    --bg-black: #04010c;
+    --txt-color: #f3ecfe;
+    --purple-btn-bg: #5e1ba5;
+    --yellow-btn-bg: #f9bd25;
+    --green-btn-bg:#066E43;
+    --red-btn-bg: #7b0421;
+    --icon-color: #924eda;
+    --green-txt: #00ff85ab;
+    --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e);
+    --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718);
+    --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e);
+    --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718);
+    --green2-gradient: linear-gradient(to bottom, #69890e, #030718);
+    --input-bg:#152754;
+  }
+  html,
+  body {
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    background: var(--bg-black);
+    color: var(--txt-color);
+    font-family: 'Clash Display', sans-serif;
+    margin-inline: auto;
+  }
+  main,
+  footer {
+    width: 95%;
+    margin-inline: auto;
+  }
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    cursor: pointer;
+  }
+  /* icon */
+  .logo-img {
+    height: 30px;
+    cursor: pointer;
+  }
+  .fa-solid {
+    cursor: pointer;
+  }
+  .menu-bar {
+    font-size: 25px;
+  }
+  .close-bar {
+    color: black;
+    font-size: 30px;
+    display: grid;
+    place-content: center;
+    margin-top: 2rem;
+  }
+.nft-reward{
+  margin-top: 2rem;
+}
+.nft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6rem;
+}
+h3 {
+  color:#76E1B5;
+  padding: 0.6rem 0 0 0;
+}
+h4 {
+  padding: 0.6rem 0;
+}
+.nft-note {
+  padding: 0  0.5rem;
+  text-align: left;
+}
+.nft-heading{
+  text-align: center;
+    }
+.nft-heading p{
+      padding-bottom: 1rem;
+    }
+h1 {
+    padding-bottom: 1rem;
+  } 
+/* Glory's part */
+
+@media only screen and (min-width:768px){
+  .nft{
+    flex-direction: row;
+    
+  }
+  h3 {
+    color:#76E1B5;
+    padding: 0.6rem 0 0 0;
+  }
+  h4 {
+    padding: 0.6rem 0;
+  }
+  .nft-note {
+    /* padding-top: 3rem; */
+    text-align: left;
+  }
+  .nft-heading{
+    text-align: center;
+    }
+      
+  .nft-heading p{
+        padding-bottom: 3rem;
+    }
+  h1 {
+      padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width:1017px){
+  .nft-heading{
+text-align: center;
+  }
+  .nft-heading p{
+    padding-bottom: 3rem;
+  }
+  h1 {
+  padding-bottom: 1rem;
+}
+  .nft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1.6rem;
+  }
+  h3 {
+    color:#76E1B5;
+    ;
+    padding: 0.6rem 0 0 0;
+  }
+  h4 {
+    padding: 0.6rem 0;
+  }
+.nft{
+  width: 80%;
+  margin-inline: auto;
+}
+
+
+
+}
+
+/* glory */
+/* glory */
+ /* c9a5b57164710de616dd09c0bc3e0d9a6efe37a5 */

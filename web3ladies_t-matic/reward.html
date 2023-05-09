@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font family -->
+     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet">
+    <!-- fontawesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/reward.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Reward</title>
+</head>
+<body>
+    <!-- arrow icons -->
+    <!-- <span class="angle-right"><i class="fa-solid fa-angle-right"></i></span> -->
+    <!-- <span class="angle-left"><i class="fa-solid fa-angle-left"></i></span> -->
+    <!-- <span class"right-arrow"><i class="fa-solid fa-arrow-right"></i></span> -->
+    <!-- Barakat -->
+    <header>
+        <nav>
+           <!--  -->
+            <div class="logo">
+                <a href="../index.html" target="_parent"><img class="logo-img" src="./assets/icons/Matic-L.png" alt=""></a>
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+           <div class="collapsible">
+            <div class="logo2">
+                <a href="../index.html" target="_parent"><img class="logo-img" src="./assets/icons/Matic-L.png" alt=""></a>
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <div class="collapse">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="../index.html" target="_parent">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lotteries</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="./result.html" target="_parent">Result</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How to play</a></li>
+                </ul>
+                <div class="btn">
+                <a class="connect-btn" id="accountArea">Connect Wallet</a>
+                <span class="close-bar"><i class="fa-solid fa-xmark"></i></span>
+                <ul class="connect-wallet" id="connect-wallet">
+                    <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
+                    <li class="wallet-link">Phantom <img src="./assets/icons/phantom.png" alt=""></li>
+                    <li class="wallet-link" >Slope <img src="./assets/icons/slope.png" alt=""></li>
+                    <li class="wallet-link" onclick="connectMetamask()">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
+                </ul>
+                </div>
+            </div>
+           </div>
+        </nav>
+    </header>
+    <main>
+    <!-- Glory -->
+        <div class="nft-reward">
+            <div class="nft-heading">
+                <h1>Claim your Matic Lotto NFT Reward</h1>
+                <p>
+                    Enter your ENS or wallet address to mint. Minting is free-no gas.</p>
+            </div>
+           
+    <div class="nft">
+                <div class="nft-image">
+<img src="./assets/Frame 6543.png" alt="">
+                </div>
+    <div class="nft-note">
+    <h2>
+        Matic Lotto NFT Reward
+    </h2>
+    <h3>
+        Description
+    </h3>
+    <h4>
+        Matic Lotto NFT - Created by Matic Lotto Team 
+        <br>
+    </h4>
+    <p> This token is a verifiable ticket (limited 9,999) <br>
+       for admission to BeMore 2022, which is a 24 <br>
+       hours virtual super conference exclusively  <br>
+       created for ADPList members & the Design and Product <br> community. Sponsored by Figma, Webflow, <br> Airmeet, Slack, Betafi, Amplitude and Bloomberg. 
+<br> <br>
+       Time: September 21st, 2022 <br> 
+       Location: Virtual
+    </p>
+                </div>
+            </div>
+           
+        </div>
+    <!-- Glory -->
+    
+    </main>
+    <footer>
+        <div class="social">
+            <h3>FOLLOW US</h3>
+            <div class="social-icon">
+                <img src="./assets/icons/bxl-twitter.svg.png" alt="">
+                <img src="./assets/icons/bxl-instagram.svg.png" alt="">
+                <img src="./assets/icons/bxl-discord.svg.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Copyright © T-Matic Team</span>
+            <ul class="footer-nav">
+                <li>Home</li>
+                <li>Lotteries</li>
+                <li>Result</li>
+                <li>About</li>
+                <li>How to play</li>
+            </ul>
+        </div>
+    </footer>
+   <!-- NFT Lotto contract functions -->
+   <script type="text/javascript" src="./javascript/blockchain.js"></script>
+   <script type="text/javascript" src="/lotto_NFT.js"></script>
+  <!--custom script  -->
+  <script src="./javascript/playscreen.js"></script>
+  <script src="./javascript/script.js"></script>
+</body>
+</html>

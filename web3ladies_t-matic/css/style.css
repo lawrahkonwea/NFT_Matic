@@ -1,0 +1,721 @@
+/* general styling */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --bg-black: #04010c;
+  --txt-color: #f3ecfe;
+  --purple-btn-bg: #5e1ba5;
+  --yellow-btn-bg: #f9bd25;
+  --red-btn-bg: #7b0421;
+  --icon-color: #924eda;
+  --green-txt: #00ff85ab;
+  --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e 50%);
+  --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718 50%);
+  --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e 50%);
+  --purple-to-blue-gradient: linear-gradient(to bottom, #7744c6, #030718 50%);
+  --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718 50%);
+  --green2-gradient: linear-gradient(to bottom, #69890e, #030718 50%);
+}
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: var(--bg-black);
+  color: var(--txt-color);
+  font-family: 'Clash Display', sans-serif;
+  margin-inline: auto;
+  overflow-y: scroll;
+}
+main,
+footer {
+  width: 95%;
+  margin-inline: auto;
+}
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+  cursor:pointer;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  cursor: pointer;
+}
+/* icon */
+.logo-img {
+  height: 30px;
+  cursor: pointer;
+}
+.fa-solid {
+  cursor: pointer;
+}
+.menu-bar {
+  font-size: 25px;
+}
+.close-bar {
+  color: black;
+  font-size: 30px;
+  display: grid;
+  place-content: center;
+  margin-top: 2rem;
+}
+/* general styling */
+
+/* Barakat  starts here*/
+
+/* header section*/
+
+/* header section*/
+
+/* hero */
+.overlay-1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  border: none;
+  border-radius: 50%;
+  filter: blur(75px);
+  background-color: #924eda7c;
+}
+.overlay-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 50%;
+  filter: blur(75px);
+  background-color: #924eda7c;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.hero-img {
+  position: relative;
+}
+.hero-txt {
+  margin-top: 1.5rem;
+  flex-basis: 40%;
+}
+.hero-txt h1 {
+  font-size: 3rem;
+  word-spacing: -8px;
+  line-height: 55px;
+  color: var(--txt-color);
+}
+.hero-txt p {
+  color: var(--txt-color);
+  margin: 1rem 0 1.3rem 0;
+  padding-right: 2rem;
+  line-height: 25px;
+  font-size: 0.8rem;
+}
+.play-now{
+  background-color: var(--purple-btn-bg);
+  font-weight: lighter;
+  color: var(--white);
+  padding: 0.7rem 3rem;
+  font-size: 0.9rem;
+}
+.play-now:hover{
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 1px solid transparent;
+  color: var(--white);
+
+}
+.read-more {
+  font-weight: lighter;
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.7rem;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 1px solid transparent;
+}
+.step-info {
+  position: relative;
+}
+.step-info h2 {
+  font-size: 2.5rem;
+  word-spacing: -5;
+  color: var(--white);
+  margin-bottom: 1.3rem;
+}
+.steps {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.step-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  border: 0.001px solid #924eda7b;
+  position: relative;
+  padding: 1.5rem 0.4rem 1.5rem 0.4rem;
+}
+.step-message p {
+  font-size: 0.8rem;
+}
+.h-bg {
+  background-color: #924eda87;
+  padding: 0.2rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  top: -10px;
+}
+.hero-step {
+  margin: 1.5rem 0;
+}
+/* hero */
+
+/* HAFSAH'S PART */
+.lottery-tag {
+  font-family: "Clash Display Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 150%;
+  color: #f3ecfe;
+  text-align: center;
+  margin-top: 30px;
+}
+.swiper-div {
+  overscroll-behavior-x: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.swiper-slide {
+  /* border: none; */
+  max-width: 25%;
+  padding: 5px;
+  margin-left: 10px;
+  border: 0.2px solid #4e4a4ab5;
+  border-bottom: 0;
+  border-radius: 8px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+.sold-out-btn {
+  height: 10px;
+  font-family: "Clash Display Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+  /* padding: 3px; */
+  /* padding-top: 10px; */
+}
+.btn-div {
+  justify-content: center;
+  align-items: center;
+  background: #f9bd25; 
+  width: 60px;
+  /* padding: 8px; */
+  /* gap: 8px;
+  width: 77px;
+  height: 20px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  padding-top: 10px; */
+}
+.tickets {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+}
+.angry-joe {
+  font-family: "Inter" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #f3ecfe;
+  line-height: 150%;
+}
+.price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+}
+.eth {
+  color: var(--green-txt);
+}
+.more-details-div {
+  text-align: right;
+  /* border-top: 1px solid #5e1ba5; */
+  border-top: 1px solid rgba(23, 80, 225, 0.2);
+  padding: 1rem;
+  width: 100% !important;
+  /* border: 0.2px solid #4e4a4a; */
+}
+
+.more-details {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f3ecfe;
+}
+
+.user1 {
+  background-image: var(--red-to-blue-gradient);
+}
+.user2 {
+  background-image: var(--purple-to-blue-gradient);
+}
+.user3 {
+  background-image: var(--green1-gradient);
+}
+.user4 {
+  background-image: var(--green2-gradient);
+}
+
+.lucky-number-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px !important;
+  width: 85%;
+  margin: auto;
+}
+.lucky-tag {
+  font-family: "Clash Display Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #ffffff;
+  width: 300px;
+}
+.number {
+  padding: 10px;
+  background-color: var(--green-txt);
+  color: white;
+  box-sizing: border-box;
+  margin: 4px;
+  margin-top: 25px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+.numbers {
+  font-weight: 500;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: #067044;
+  margin: 0 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+}
+
+.view-result {
+  font-weight: lighter;
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.7rem;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #7744c6, #067044) border-box;
+  border: 1px solid transparent;
+}
+
+.swiper-container-div {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* FOR SMALL SCREEN */
+  .swiper-slide {
+    width: 100% !important;
+    min-width: 70%;
+  }
+
+  .sold-out-btn {
+    font-size: 10px;
+    line-height: 5px;
+    margin-top: 5px;
+  }
+  .btn-div {
+    padding: 2px;
+    width: 50px;
+  }
+  .hafs-img {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  /* FOR IPHONE XR SCREEN SIZE */
+  .lottery-tag {
+    font-size: 40px;
+  }
+  .lucky-tag {
+    font-size: 30px;
+    width: 50%;
+  }
+  .number {
+    font-size: x-small;
+  }
+  .lucky-btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+    background-color: #1e1e1e;
+  }
+  .lucky-btn:hover {
+    list-style: none;
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* FOR LARGE SCREEN */
+  .swiper-slide {
+    /* width: 22% !important; */
+    min-width: 10%;
+  }
+  .swiper-div {
+    overflow-x: hidden !important;
+    margin: auto;
+    width: 90%;
+  }
+  .btn-div {
+    padding-top: 5px;
+  }
+}
+/* END OF HAFSAH'S PART */
+
+/* footer */
+
+/* footer */
+@media only screen and (min-width: 600px) {
+  .hero-content {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .hero-txt {
+    padding-top: 2.5rem;
+    flex-basis: 40%;
+  }
+  .hero-img {
+    flex-basis: 60%;
+  }
+  .hero-txt h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .hero-txt p {
+    font-size: 0.7rem;
+    width: 250px;
+  }
+  .hero-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+  }
+  .steps {
+    width: 100%;
+    flex-basis: 60%;
+  }
+  .step-info {
+    flex-basis: 40%;
+  }
+  .step-info h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* header section*/
+
+  /* header section*/
+  /* hero */
+  .hero-txt h1 {
+    font-size: 3.5rem;
+    line-height: 70px;
+  }
+  .hero-txt p {
+    font-size: 1rem;
+    width: 350px;
+  }
+  .step-message{
+  padding: 3rem 2.5rem 3rem 2.5rem;
+
+  }
+  .hero-step h2 {
+    font-size: 2.5rem;
+  }
+  /* hero */
+  /* footer */
+  /* footer */
+}
+
+@media only screen and (min-width: 1071px) {
+  .overlay-1 {
+    width: 350px;
+    height: 350px;
+  }
+  .overlay-2 {
+    width: 300px;
+    height: 300px;
+  }
+  header {
+    padding: 0 1.5rem;
+  }
+  .h-bg{
+    padding: 0.4rem;
+    top: -20px;
+  }
+  .h-bg img{
+    width: 30px;
+  }
+  .hero-txt h1 {
+    margin-top: 2rem;
+    font-size: 5rem;
+    line-height: 75px;
+    font-weight: 700;
+  }
+  .hero-txt p {
+    font-size: 1.2rem;
+    width: 350px;
+  }
+  .step-info h2 {
+    font-size: 3.5rem;
+  }
+  .step-info {
+    flex-basis: 50;
+  }
+  .steps {
+    flex-basis: 50%;
+  }
+}
+/* Barakat end here */
+
+/* Hafsoh starts here */
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 1071px) {
+}
+@media only screen and (min-width: 1071px) {
+}
+/* Hafsoh end here */
+
+/* Glory starts here */
+@media only screen and (min-width: 768px) {
+  .glory-matic-lotto {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+  }
+  .glory-matic-img {
+    background: var(--red-to-blue-gradient);
+  }
+
+  .matic {
+    padding-bottom: 3rem;
+  }
+  .matic h3 {
+    font-size: 2rem;
+  }
+  .glory-matic-note p {
+    color: grey;
+  }
+  .glory-matic-note button {
+    background: var(--purple-btn-bg);
+    color: white;
+    padding: 0.7rem;
+    margin-top: 0.6rem;
+  }
+  .team h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  .team-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fa-angle-left {
+    left: 3rem;
+    position: absolute;
+    top: 123rem;
+  }
+  .fa-angle-right {
+    position: absolute;
+    right: 2rem;
+    top: 123rem;
+  }
+  .team-images h6 {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* matic-lotto */
+  .glory-matic-lotto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  .glory-matic-img {
+    background: var(--red-to-blue-gradient);
+    width: 70%;
+  }
+  .matic {
+    padding-bottom: 3rem;
+  }
+  .matic h3 {
+    font-size: 2rem;
+  }
+  .glory-matic-note {
+    padding-top: 5rem;
+    width: 70%;
+    text-align: center;
+  }
+  .glory-matic-note p {
+    color: grey;
+    line-height: 1.5rem;
+  }
+  .glory-matic-note button {
+    background: var(--purple-btn-bg);
+    color: white;
+    padding: 0.7rem;
+    margin-top: 0.6rem;
+  }
+  .team h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  .team-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .fa-angle-left {
+    left: 2rem;
+    position: absolute;
+    top: 146rem;
+  }
+  .fa-angle-right {
+    position: absolute;
+    right: 2rem;
+    top: 146rem;
+  }
+  .team {
+    flex-basis: 30%;
+  }
+  .team-images h6 {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+}
+@media only screen and (min-width: 1071px) {
+  /* matic-lotto */
+  .glory-matic-lotto {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+  }
+  .glory-matic-img {
+    background: var(--red-to-blue-gradient);
+  }
+  .matic {
+    padding-bottom: 3rem;
+  }
+  .matic h3 {
+    font-size: 2rem;
+  }
+  .glory-matic-note p {
+    color: grey;
+  }
+  .glory-matic-note button {
+    background: var(--purple-btn-bg);
+    color: white;
+    padding: 0.7rem;
+    margin-top: 0.6rem;
+  }
+  .team h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  .team-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team-images h6 {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  .fa-angle-left {
+    position: absolute;
+    left: 13rem;
+    top: 156rem;
+  }
+  .fa-angle-right {
+    position: absolute;
+    right: 43rem;
+    top: 156rem;
+  }
+}
+
+/* Glory end here */
