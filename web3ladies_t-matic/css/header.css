@@ -1,0 +1,219 @@
+/* header section*/
+nav {
+  display: flex;
+  flex-direction: column;
+}
+.logo,
+.logo2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--bg-black);
+}
+.logo2 .menu-bar {
+  display: none;
+}
+.collapsible {
+  background-color: var(--txt-color);
+  /* height: 100vh; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 200ms ease;
+  transform: translateX(100%);
+  z-index: 1;
+}
+.hide {
+  transform: translateX(0);
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+}
+.nav-link:hover {
+  background-color: var(--bg-black);
+  color: var(--white);
+}
+.connect-btn {
+  display: block;
+  /* background-color: var(--purple-btn-bg); */
+  background: linear-gradient(black, black) padding-box,
+  linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 1px solid transparent;
+  color: var(--white);
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1.5rem 0;
+}
+.connect-btn:hover {
+  background: #5e1ba5;
+  color: white;
+}
+/* connect wallet */
+.connect-wallet {
+  background-color: #04081db5;
+  padding: 0 0.3rem;
+  position: fixed;
+  display: none;
+  bottom: 32%;
+  width: 100%;
+}
+.wallet-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  cursor: pointer;
+}
+.wallet-link:hover {
+  border-bottom: 2px solid var(--txt-color);
+}
+.wallet-link img {
+  width: 17px;
+  height: 17px;
+}
+.wallet-link span,
+.wallet-link img {
+  margin-left: 2rem;
+}
+/* header section*/
+
+ footer {
+margin-top: 4rem;
+padding: 0 2rem;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.social h3 {
+  font-size: 2rem;
+}
+.social-icon {
+  display: flex;
+}
+.copyright {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+.copyright span {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-nav li {
+  margin: 0.5rem;
+} 
+
+/* footer */
+
+@media only screen and (min-width: 600px) {
+    
+  }
+  @media only screen and (min-width: 768px) {
+    /* header section*/
+    .close-bar,
+    .menu-bar {
+      display: none;
+    }
+    .logo2 {
+      display: none;
+    }
+    nav {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .collapsible {
+      background-color: transparent;
+      position: sticky;
+      height: 5vh;
+      top: 1.2rem;
+      transform: translateY(0);
+      transition: 200ms ease;
+    }
+    .collapse {
+      display: flex;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      height: 35px;
+    }
+    .nav-link {
+      margin: 0 0.7rem;
+      color: var(--txt-color);
+      border-bottom: none;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+    .connect-btn {
+      padding: 0.5rem 1.5rem;
+      margin: 0 1rem 0 2rem;
+      font-weight: lighter;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      border: 2px solid transparent;
+    }
+    .connect-btn:hover{
+      background: #5e1ba5 ;
+      border: transparent;  
+    }
+    .connect-wallet {
+      bottom: 0;
+      top: 3rem;
+      right: 0.5rem;
+      z-index: 1;
+      width: 195px;
+      height: 250px;
+    }
+    
+    /* header section*/
+    
+    /* footer */
+    footer {
+      position: relative;
+      bottom: 0;
+    }
+    .social {
+      margin: 1.5rem;
+    }
+    .social h3 {
+      font-size: 2rem;
+      margin: 2rem 0 0.5rem 0;
+    }
+    .copyright {
+      flex-direction: row;
+    }
+  
+    .footer-nav li {
+      margin: 0 0.4rem;
+    }
+    /* footer */
+  }
+  
+  @media only screen and (min-width: 1071px) {
+      header {
+        padding: 0 1.5rem;
+      }   
+    
+  }
+  
+  

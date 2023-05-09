@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- NFT Loto contract link -->
+    <!-- <script type="text/javascript" src="https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"></script> -->
+    <!-- font family -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet">
+    <!-- fontawesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/playscreen.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Play Game</title>
+</head>
+<body>
+   
+    <!-- Barakat -->
+    <header>
+        <nav>
+            <div class="logo">
+              <a href="../index.html" target="_parent"><img class="logo-img" src="./assets/icons/Matic-L.png" alt=""></a>  
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+           <div class="collapsible">
+            <div class="logo2">
+                <a href="../index.html" target="_parent"><img class="logo-img" src="./assets/icons/Matic-L.png" alt=""></a>  
+
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <div class="collapse">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="../index.html" target="_parent">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lotteries</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="./result.html" target="_parent">Result</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How to play</a></li>
+                </ul>
+                <div class="btn" >
+                <a class="connect-btn" id="accountArea">Connect Wallet</a>
+                <span class="close-bar"><i class="fa-solid fa-xmark"></i></span>
+                <ul class="connect-wallet" id="connect-wallet">
+                    <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
+                    <li class="wallet-link">Phantom <img src="./assets/icons/phantom.png" alt=""></li>
+                    <li class="wallet-link" >Slope <img src="./assets/icons/slope.png" alt=""></li>
+                    <li class="wallet-link" onclick="connectMetamask()">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
+                </ul>
+                </div>
+            </div>
+           </div>
+        </nav>
+    </header>
+    <main>
+    <!-- Barakat -->
+    <section class="profile-card">
+        <div class="user-card">
+            <div class="user-img">
+                <img src="./assets/player3.png" alt="">
+            </div>
+            <div class="ff">
+            <p class="username">Angry Joe #990</p>
+            <div class="ticket-info">
+             <p class="ticket">
+                Tickets 
+                <br> 200
+             </p>
+             
+             <p class="price">
+                Price 
+                <br> <span>66 Eth</span>
+             </p>
+            </div>
+            <small>More Details
+    <span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                
+            </small>
+            </div>
+        </div>
+        <div class="drawin">
+            <h4>Draw in</h4>
+            <div class="time">
+            <p class="hr">20h</p>
+            <p class="min">20min</p>
+
+            </div>
+            <div class="play-btn">
+                <p class="rule">Rules</p>
+                <a class="result" href="./result.html" target="_blank">Results</a>
+            </div>
+        </div>
+    </section>
+    <section class="game">
+        <ul class="value-input">
+            <li class="num-input">22</li>
+            <li class="num-input">4</li>
+            <li class="num-input">5</li>
+            <li class="num-input">7</li>
+            <li class="num-input"></li>
+            <li class="num-input"></li>
+        </ul>
+        <div class="game-info">
+    <p>Select six (6) digits and continue</p>
+    <div class="info-btn">
+        <button class="i-btn clear">Clear</button>
+        <button class="i-btn pick">Quick Pick</button>
+    </div>
+</div>
+        <ul class="game-num">
+            <li class="num">1</li>
+            <li class="num">2</li>
+            <li class="num">3</li>
+            <li class="num">4</li>
+            <li class="num">5</li>
+            <li class="num">6</li>
+            <li class="num">7</li>
+            <li class="num">8</li>
+            <li class="num">9</li>
+            <li class="num">10</li>
+            <li class="num">11</li>
+            <li class="num">12</li>
+            <li class="num">13</li>
+            <li class="num">14</li>
+            <li class="num">15</li>
+            <li class="num">16</li>
+            <li class="num">17</li>
+            <li class="num">18</li>
+            <li class="num">19</li>
+            <li class="num">20</li>
+            <li class="num">21</li>
+            <li class="num">22</li>
+            <li class="num">23</li>
+            <li class="num">24</li>
+            <li class="num">25</li>
+            <li class="num">26</li>
+            <li class="num">27</li>
+            <li class="num">28</li>
+            <li class="num">29</li>
+            <li class="num">30</li>
+            <li class="num">31</li>
+            <li class="num">32</li>
+            <li class="num">33</li>
+            <li class="num">34</li>
+            <li class="num">35</li>
+            <li class="num">36</li>
+            <li class="num">37</li>
+            <li class="num">38</li>
+            <li class="num">39</li>
+            <li class="num">40</li>
+            <li class="num">41</li>
+            <li class="num">42</li>
+            <li class="num">43</li>
+            <li class="num">44</li>
+            <li class="num">45</li>
+            <li class="num">46</li>
+            <li class="num">47</li>
+            <li class="num">48</li>
+            <li class="num">49</li>
+            <li class="num">50</li>
+            <li class="num">51</li>
+            <li class="num">52</li>
+            <li class="num">53</li>
+            <li class="num">54</li>
+            <li class="num">55</li>
+            <li class="num">56</li>
+            <li class="num">57</li>
+            <li class="num">58</li>
+            <li class="num">59</li>
+            <li class="num">60</li>
+            <li class="num">61</li>
+            <li class="num">62</li>
+            <li class="num">63</li>
+            <li class="num">64</li>
+            <li class="num">65</li>
+            <li class="num">66</li>
+            <li class="num">67</li>
+            <li class="num">68</li>
+            <li class="num">69</li>
+            <li class="num">70</li>
+            <li class="num">71</li>
+            <li class="num">72</li>
+            <li class="num">73</li>
+            <li class="num">74</li>
+            <li class="num">75</li>
+            <li class="num">76</li>
+            <li class="num">77</li>
+            <li class="num">78</li>
+            <li class="num">79</li>
+            <li class="num">80</li>
+            <li class="num">81</li>
+            <li class="num">82</li>
+            <li class="num">83</li>
+            <li class="num">84</li>
+            <li class="num">85</li>
+            <li class="num">86</li>
+            <li class="num">87</li>
+            <li class="num">88</li>
+            <li class="num">89</li>
+            <li class="num">90</li>
+            <li class="num">91</li>
+            <li class="num">92</li>
+            <li class="num">93</li>
+            <li class="num">94</li>
+            <li class="num">95</li>
+            <li class="num">96</li>
+            <li class="num">97</li>
+            <li class="num">98</li>
+            <li class="num">99</li>
+        </ul>
+
+       <div class="confirm">
+        <select name="draw" id="draw" class="draw">
+            <option>1 draw</option>
+            <option>2 draw</option>
+        </select>
+        <br>
+       <!-- <a href="./reward.html" target="_parent"><button class="confirm-draw">Confirm Transaction</button></a> -->
+       <a  target="_parent"><button class="confirm-draw" onclick="participate()">Confirm Transaction</button></a> 
+       </div> 
+    </section>
+    <!-- Barakat -->
+   
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <h3>FOLLOW US</h3>
+            <div class="social-icon">
+                <img src="./assets/icons/bxl-twitter.svg.png" alt="">
+                <img src="./assets/icons/bxl-instagram.svg.png" alt="">
+                <img src="./assets/icons/bxl-discord.svg.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Copyright © T-Matic Team</span>
+            <ul class="footer-nav">
+                <li>Home</li>
+                <li>Lotteries</li>
+                <li>Result</li>
+                <li>About</li>
+                <li>How to play</li>
+            </ul>
+        </div>
+    </footer>
+    <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript">
+  </script>
+     <!-- NFT Lotto contract functions -->
+     <script type="text/javascript" src="./javascript/blockchain.js"></script>
+     <script type="text/javascript" src="/lotto_NFT.js"></script>
+    <!--custom script  -->
+    <script src="./javascript/playscreen.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>

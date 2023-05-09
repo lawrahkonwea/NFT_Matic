@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- font family -->
+ <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet">
+    <!-- custom styling -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/claim-reward.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>claim reward</title>
+</head>
+<body>
+    <!-- arrow icons -->
+    <!-- <span class="angle-right"><i class="fa-solid fa-angle-right"></i></span> -->
+    <!-- <span class="angle-left"><i class="fa-solid fa-angle-left"></i></span> -->
+    <!-- <span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span> -->
+    <!-- Barakat -->
+    <header>
+        <nav>
+           <!--  -->
+            <div class="logo">
+                <a href="../index.html" target="_parent"><img class="logo-img" src="./assets/icons/Matic-L.png" alt=""></a>
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+           <div class="collapsible">
+            <div class="logo2">
+              <a href="../index.html" target="_parent"><img class="logo-img" src="./assets/icons/Matic-L.png" alt=""></a>
+
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <div class="collapse">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="../index.html" target="_parent">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lotteries</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="./result.html" target="_parent">Result</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How to play</a></li>
+                </ul>
+                <div class="btn">
+                <a class="connect-btn" id="accountArea">Connect Wallet</a>
+                <span class="close-bar"><i class="fa-solid fa-xmark"></i></span>
+                <ul class="connect-wallet" id="connect-wallet">
+                    <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
+                    <li class="wallet-link">Phantom <img src="./assets/icons/phantom.png" alt=""></li>
+                    <li class="wallet-link" >Slope <img src="./assets/icons/slope.png" alt=""></li>
+                    <li class="wallet-link connect1" id="connect" onclick="connectMetamask()" >Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
+                </ul>
+                </div>
+            </div>
+           </div>
+        </nav>
+    </header>
+    <main>
+
+    <!--Hafsah's part > CONNECT WALLETS -->
+
+    <div class="connect-container" style="display: none;">
+        <main>
+        <div style="width: 95%; margin: auto">
+          <h3 class="connect-header">Connect with MetaMask</h3>
+          <p class="connect-tag">Select the account(s) to use on this site</p>
+          <p class="new-account">New account</p>
+  
+          <div  class="middle-div">
+            <i class="fa fa-solid fa-square-check"></i>
+            <div class="gradient"></div>
+            <p class="matic-ptag">Account 1 (0x08g... <br> 0 MATIC</p>
+          </div>
+        </main>
+  
+        <footer>
+          <p class="modal-footer">Connect with only the sites you trust</p>
+          <div class="foot">
+            <button class="cancel">Cancel</button>
+            <button class="next" onclick="nextConnect();">Next</button>
+          </div>
+        </footer> 
+      </div>
+  
+      <div class="connect-container2" style="display: none;">
+        <main>
+        <div style="width: 95%; margin: auto">
+          <h3 class="connect-header">Connect to Account 1</h3>
+          <p class="connect-tag" id="wallet-name">(0x08g...eef)</p>
+          <div  class="middle-div">
+            <i class="fa fa-solid fa-eye"></i>
+            <div class="gradient"></div>
+            <p class="matic-ptag">Account 1 (0x08g... <br> 0 MATIC</p>
+          </div>
+        </main>
+  
+        <footer>
+          <p class="modal-footer">Connect with only the sites you trust</p>
+          <div class="foot">
+            <button class="cancel">Cancel</button>
+            <button class="next" id="next" >Next</button>
+          </div>
+        </footer> 
+      </div>
+  
+
+    <!-- END OF CONNECT WALLETS  -->
+
+
+    <!-- Barakat -->
+    
+    <!-- Barakat -->
+    <!-- Hafsoh -->
+    <section>
+        <p class="congrats">Congratulations  &#129321;</p>
+        <p class="matic">Your Matic Lotto NFT is here</p>
+        <button class="eth-reward">claim reward</button>
+        <div class="img-div">
+          <img src="./assets/player1.png" alt="" class="matic-img" />
+        </div>
+        
+    </section>
+    <!-- Hafsoh -->
+
+
+
+    <!-- Glory -->
+    <section>
+
+    </section>
+    <!-- Glory -->
+    </main>
+
+    <footer>
+        <div class="social">
+            <h3>FOLLOW US</h3>
+            <div class="social-icon">
+                <img src="./assets/icons/bxl-twitter.svg.png" alt="">
+                <img src="./assets/icons/bxl-instagram.svg.png" alt="">
+                <img src="./assets/icons/bxl-discord.svg.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Copyright © T-Matic Team</span>
+            <ul class="footer-nav">
+                <li>Home</li>
+                <li>Lotteries</li>
+                <li>Result</li>
+                <li>About</li>
+                <li>How to play</li>
+            </ul>
+        </div>
+    </footer>
+    <!--custom script  -->
+    <script src="./javascript/blockchain.js"></script>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/claim-reward.js"></script>
+</body>
+</html>

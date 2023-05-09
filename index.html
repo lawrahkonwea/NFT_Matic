@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- blockchain wallet signin -->
+    <!-- <script type="module" src="https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"></script> -->
+
+     <!-- font family -->
+     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet">
+    <!-- fontawesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- custom styling -->
+    <link rel="stylesheet" href="web3ladies_t-matic/css/style.css">
+    <link rel="stylesheet" href="./web3ladies_t-matic/css/header.css">
+    <title>Lotery Matic</title>
+</head>
+<body>
+    <!-- arrow icons -->
+    <!-- <span class="angle-right"><i class="fa-solid fa-angle-right"></i></span> -->
+    <!-- <span class="angle-left"><i class="fa-solid fa-angle-left"></i></span> -->
+    <!-- <span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span> -->
+    <!-- Barakat -->
+    <header>
+        <nav>
+           <!--  -->
+            <div class="logo">
+                <a href="index.html"><img class="logo-img" src="web3ladies_t-matic/assets/icons/Matic-L.png" alt=""></a>
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+           <div class="collapsible">
+            <div class="logo2">
+                <img class="logo-img" src="web3ladies_t-matic/assets/icons/Matic-L.png" alt="">
+                <span class="menu-bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <div class="collapse">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="index.html" target="_parent">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lotteries">Lotteries</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="web3ladies_t-matic/result.html" target="_parent">Result</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-to-play">How to play</a></li>
+                </ul>
+                <div class="btn" >
+                    <a class="connect-btn" id="accountArea">Connect Wallet</a>
+                <span class="close-bar"><i class="fa-solid fa-xmark"></i></span>
+                <ul class="connect-wallet" id="connect-wallet">
+                    <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
+                    <li class="wallet-link">Phantom <img src="web3ladies_t-matic/assets/icons/phantom.png" alt=""></li>
+                    <li class="wallet-link" >Slope <img src="web3ladies_t-matic/assets/icons/slope.png" alt=""></li>
+                    <li class="wallet-link" onclick="connectMetamask()"> Metamask <img src="web3ladies_t-matic/assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link" id="adminn"> Admin <img src="web3ladies_t-matic/assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
+                </ul>
+                </div>
+            </div>
+           </div>
+        </nav>
+    </header>
+    <main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-txt">
+                <h1>Matic-Lotto 
+                    <br>   
+                    NFT Lottery 
+                    Community</h1>
+                    <p>Play the Matic-Lotto for a chance to win huge NFT prizes</p>
+                    <a href="web3ladies_t-matic/playscreen.html" target="_parent" class=" play-now">Play Now</a>
+            </div>
+            <div class="hero-img">
+                <div class="overlay-1"></div>
+                <img src="web3ladies_t-matic/assets/Hero-Image.png" alt="hero image">
+            </div>
+        </div>
+        <div id="how-to-play" class="hero-step">
+           <div class="step-info">
+            <div class="overlay-2"></div>
+            <h2>Matic-Lotto in 
+                <br>
+                3  steps</h2>
+                <a href="#" class="read-more">Read more</a>
+           </div>
+           <div class="steps">
+                <div class="step-message">
+                   <div class="h-bg">
+                    <img src="web3ladies_t-matic/assets/icons/folder-connection.png" alt="">
+                   </div>
+                    <p>Connect wallet</p>
+                </div>
+                <div class="step-message">
+                   <div class="h-bg">
+                    <img src="web3ladies_t-matic/assets/icons/bitcoin-card.png" alt="">
+                   </div>
+                    <p>Buy NFT Ticket</p>
+                </div>
+                <div class="step-message">
+                   <div class="h-bg">
+                    <img src="web3ladies_t-matic/assets/icons/bitcoin-convert.png" alt="">
+                   </div>
+                    <p>Wait for the draw</p>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!-- Barakat -->
+
+    <!-- Hafsoh---->
+        <section id="lotteries">
+        <p class="lottery-tag">Recent Lotteries</p>
+        <!--  SWIPER DIV -->    
+        
+        <div class="swiper-div" style="display: flex; flex-direction: row; overflow-x: scroll;">
+            <div class="swiper-slide user1">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player1.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Sold Out</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Angry  Joe #990</p>
+                    </div>  
+                    <div style="display: flex;">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>200</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">Eth</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide user2">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player2.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Sold Out</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Angry  Joe #990</p>
+                    </div>  
+                    <div style="display: flex;">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>200</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">Eth</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide user3">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player3.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Sold Out</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Angry  Joe #990</p>
+                    </div>  
+                    <div style="display: flex;">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>200</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">Eth</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide user4">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player4.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Sold Out</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Angry  Joe #990</p>
+                    </div>  
+                    <div  class="swiper-container-div">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>200</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">Eth</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+ 
+        <!-- END OF SCREEN SWIPER DIV -->
+
+        <!-- Lucky Number Div -->
+        <div class="lucky-number-div">
+            <div>
+                <p class="lucky-tag">Today's lucky numbers</p>
+                <a href="./web3ladies_t-matic/result.html" class="view-result">View Result</a>
+            </div>
+            <div>
+                <ul class="input-box">
+                    <li class="numbers">43</li>
+                    <li class="numbers">4</li>
+                    <li class="numbers">1</li>
+                    <li class="numbers">7</li>
+                    <li class="numbers">38</li>
+                    <li class="numbers">9</li>
+                </ul>
+            </div>
+        </div>
+        <p class="lottery-tag">Upcoming Lotteries</p>
+
+        <div class="swiper-div" style="display: flex; flex-direction: row; overflow-x: scroll;">
+            <div class="swiper-slide user1">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player1.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Upcoming</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Celine Emm</p>
+                    </div>  
+                    <div style="display: flex;">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>--</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">--</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide user2">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player2.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Upcoming</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Phil Joe</p>
+                    </div>  
+                    <div style="display: flex;">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>--</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">--</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide user3">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player3.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Upcoming</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Anna Ray</p>
+                    </div>  
+                    <div style="display: flex;">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>--</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">--</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide user4">
+                <img class="hafs-img" src="web3ladies_t-matic/assets/player4.png" alt="">
+                <div class="details-container">
+                    <div class="btn-div">
+                        <p class="sold-out-btn" >Upcoming</p>
+                    </div>
+                    <div>
+                        <p class="angry-joe">Badley West</p>
+                    </div>  
+                    <div style="display: flex;">
+                        <div style="padding: 10px;" class="tickets">
+                            <p>Tickets</p>
+                            <p>--</p>
+                        </div>
+                        <div style="border-right:1px solid rgb(36, 36, 96);"></div>
+                        <div style="padding: 10px;" >
+                            <p class="price">Price</p>
+                            <p class="eth">--</p>
+                        </div>
+                    </div>
+            
+                    <div class="more-details-div">
+                        <span class="more-div">More Details &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+                
+    </section>
+    <!-- Hafsoh -->
+  
+    <!-- Glory -->
+    <section>
+        <div class="glory-matic-lotto">
+            
+            <div class="glory-matic-img">
+                <i class="fa-solid fa-angle-left" ></i>
+                <div>
+                    <img src="web3ladies_t-matic/assets/Rectangle.png" alt="">
+                </div>
+             
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            
+            <div class="glory-matic-note">
+                <div class="matic">
+                    <h3>
+                         Matic-Lotto Extra
+                    </h3>
+                    <p>
+                     Other special benefits
+                    </p>
+                </div>
+               
+                <p>
+                    Read & Earn Package
+                </p>
+                <p>
+                  Learn how the NFT market works <br> and get a chance to win huge NFT <br> prizes
+                </p>
+                <button type="submit">
+                   Connect Wallet
+                </button>
+            </div>
+        </div>
+       <div class="team">
+          <h3>Team</h3>
+          <div class="team-images">
+            <div        class="shukur-img team">
+                <img src="web3ladies_t-matic/assets/shukro.png" alt="">
+                <h6>Shukur</h6>
+              </div>
+              <div class="cynthia-img team">
+                <img src="web3ladies_t-matic/assets/cynthia.png" alt="">
+                <h6>Cynthia</h6>
+              </div>
+              <div class="victoria-img team">
+                <img src="web3ladies_t-matic/assets/bamidele.png" alt=""><h6>
+                    Victoria
+                </h6>
+              </div>
+              <div class="victoria-img team">
+                <img src="web3ladies_t-matic/assets/bamidele.png" alt=""><h6>
+                    Bamidele
+                </h6>
+              </div>
+              <div class="mimi-img team">
+                <img src="web3ladies_t-matic/assets/mimi.png" alt="">
+                <h6>Mimi</h6>
+              </div>
+              <div class="hauwa-img team">
+                <img src="web3ladies_t-matic/assets/hauwa.png" alt="">
+                <h6>Hafsoh</h6>
+              </div>
+              <div class="ore-img team">
+                <img src="web3ladies_t-matic/assets/ore.png" alt="">
+                <h6>Ore</h6>
+              </div>
+              <div class="glory-img team">
+                <img src="web3ladies_t-matic/assets/unknow.png" alt="">
+                <h6>Glory</h6>
+              </div>
+          </div>
+         
+        </div>
+    </section>
+    </section>
+    <!-- Glory -->
+    </main>
+
+    <footer>
+        <div class="social">
+            <h3>FOLLOW US</h3>
+            <div class="social-icon">
+                <img src="web3ladies_t-matic/assets/icons/bxl-twitter.svg.png" alt="">
+                <img src="web3ladies_t-matic/assets/icons/bxl-instagram.svg.png" alt="">
+                <img src="web3ladies_t-matic/assets/icons/bxl-discord.svg.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Copyright © T-Matic Team</span>
+            <ul class="footer-nav">
+                <li>Home</li>
+                <li>Lotteries</li>
+                <li>Result</li>
+                <li>About</li>
+                <li>How to play</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- NFT Loto contract link -->
+    <!-- <script type="application/javascript" src="https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"></script> -->
+    <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript">
+  </script>
+    <!-- NFT Lotto contract functions -->
+    <script type="text/javascript" src="./web3ladies_t-matic/javascript/blockchain.js"></script>
+    <!-- <script src="./lotto_NFT.js"></script> -->
+
+    <!-- Swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--custom script  -->
+    <script src="../Matic-Lotto-NFTLottery/web3ladies_t-matic/reward.html"></script>
+    <script src="web3ladies_t-matic/javascript/script.js"></script>
+    <!-- <script src="web3ladies_t-matic/javascript/claim-reward.js"></script> -->
+</body>
+</html>
